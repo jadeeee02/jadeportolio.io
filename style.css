@@ -1,0 +1,372 @@
+/* ===============================
+   GLOBAL
+=================================*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ===============================
+   NAVBAR
+=================================*/
+.navbar {
+    background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+    transition: 0.3s ease;
+}
+
+.navbar:hover {
+    background: linear-gradient(90deg, #fbc2eb, #a18cd1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333 !important;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===============================
+   HERO
+=================================*/
+.hero {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: white;
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* ===============================
+   ABOUT
+=================================*/
+section.bg-light {
+    padding: 100px 0;
+}
+
+section.bg-light p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* ===============================
+   SKILLS
+=================================*/
+#skills {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+/* Glass container */
+#skills .carousel-inner {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 50px 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal row */
+.skills-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+}
+
+/* Skill card */
+.skill-card {
+    min-width: 130px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card:hover h6 {
+    color: #fff;
+}
+
+/* Skill icon */
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Carousel controls */
+#skills .carousel-control-prev-icon,
+#skills .carousel-control-next-icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    filter: invert(1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+.footer {
+    background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #222;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+
+/* =============================== Animation waive =================================*/
+/* Wave animation */
+.wave {
+    display: inline-block;
+    animation: wave-animation 1.5s infinite;
+    transform-origin: 70% 70%;
+    /* Pinakamaganda ang origin sa emoji center */
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(14deg);
+    }
+
+    30% {
+        transform: rotate(-8deg);
+    }
+
+    40% {
+        transform: rotate(14deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* ===============================
+   CONTACT SECTION
+=================================*/
+.contact-section {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    padding: 100px 0;
+}
+
+.contact-section h2 {
+    color: #fff;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Inputs */
+.contact-card .form-control {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
+}
+
+.contact-card .form-control:focus {
+    border-color: #a18cd1;
+    box-shadow: 0 0 0 0.2rem rgba(161, 140, 209, 0.25);
+}
+
+/* Button */
+.contact-card .btn-dark {
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: 0.3s ease;
+}
+
+.contact-card .btn-dark:hover {
+    transform: translateY(-3px);
+    background: #333;
+}
+
+/* Social icons */
+.social-links a {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 15px;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #000;
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .contact-card {
+        padding: 25px;
+    }
+}
+
+/* ===============================
+   ABOUT PAGE
+=================================*/
+
+./* ABOUT PAGE */
+.about-hero {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    padding: 120px 0;
+    color: white;
+}
+
+.about-profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,0.6);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Timeline */
+.timeline {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    border-left: 3px solid #a18cd1;
+}
+
+/* Buttons */
+.btn-dark i {
+    vertical-align: middle;
+}
+
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+@media (max-width: 991px) {
+    .skills-row {
+        gap: 30px;
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-row {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
