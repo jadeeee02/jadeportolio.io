@@ -198,6 +198,67 @@ section.bg-light p {
     transform: translateY(-3px);
 }
 
+/* Skill Card */
+.skill-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .icon-circle {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Progress Bar */
+.progress {
+    height: 12px;
+    border-radius: 50px;
+    background-color: #e9ecef;
+    overflow: hidden;
+}
+
+.skill-bar {
+    width: 0;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 2s ease-in-out;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Section Divider */
+.divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+    margin: 0.5rem auto 3rem auto;
+}
+
+
+
+
 
 /* =============================== Animation waive =================================*/
 /* Wave animation */
@@ -255,11 +316,11 @@ section.bg-light p {
 }
 
 .contact-card {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Inputs */
@@ -311,7 +372,9 @@ section.bg-light p {
    ABOUT PAGE
 =================================*/
 
-./* ABOUT PAGE */
+.
+
+/* ABOUT PAGE */
 .about-hero {
     background: linear-gradient(135deg, #a18cd1, #fbc2eb);
     padding: 120px 0;
@@ -323,8 +386,8 @@ section.bg-light p {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid rgba(255,255,255,0.6);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border: 6px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Timeline */

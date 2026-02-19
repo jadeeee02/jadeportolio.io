@@ -47,12 +47,53 @@
                     <a class="nav-link active" href="project.html">Personal Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
+                    <a class="nav-link" href="index.html#contact">Contact Me</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<section id="projects" class="container py-5">
+    <h2 class="text-center">Personal Projects</h2>
+    <div class="divider"></div>
+
+    <div class="row g-4">
+        <!-- Still Working Card -->
+        <div class="col-md-6 col-lg-4">
+            <div class="skill-card text-center">
+                <div class="icon-circle bg-info text-white">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h4>🚧 Crud User Web Application</h4>
+                <p>Status: <strong>Still Working</strong></p>
+                <p>Details: Under development and coming soon!</p>
+            </div>
+        </div>
+
+        <!-- You can duplicate this card for more projects -->
+        <div class="col-md-6 col-lg-4">
+            <div class="skill-card text-center">
+                <div class="icon-circle bg-warning text-white">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h4>Job Web Application Tracker</h4>
+                <p>Status: <strong>Still Working</strong></p>
+                <p>Details: Under development and coming soon!</p>
+            </div>
+        </div>
+           <div class="col-md-6 col-lg-4">
+            <div class="skill-card text-center">
+                <div class="icon-circle bg-warning text-white">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h4>Chill ka muna </h4>
+                <p>Status: <strong>Still Working</strong></p>
+                <p>Details: Under development and coming soon!</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -73,27 +114,4 @@
         crossorigin="anonymous"></script>
 
 </body>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // Kunin ang kasalukuyang filename
-    const currentPage = window.location.pathname.split("/").pop();
-
-    // Kunin lahat ng nav links
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    // I-check bawat link
-    navLinks.forEach(link => {
-        const linkPage = link.getAttribute('href');
-
-        // Kung match sa current page, lagyan ng 'active'
-        if(linkPage === currentPage) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
-});
-</script>
-
 </html>
